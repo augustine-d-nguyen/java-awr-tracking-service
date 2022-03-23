@@ -22,4 +22,7 @@ docker image prune -f
 echo "build docker image: ${IMG_NAME}"
 docker build -q -t ${IMG_NAME} -f Dockerfile . --no-cache
 
+# - Clean
+docker image prune --filter label=awr_git_img__stage=init
+
 
