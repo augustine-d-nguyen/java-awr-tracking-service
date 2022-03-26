@@ -93,6 +93,24 @@ services:
         limits:
           memory: 0.25G
           cpus: '0.05'
+  awr_config:
+    container_name: awr_config
+    image: awr/config-service:latest
+    hostname: awr_config
+    ports:
+      - 6001:8080
+    environment:
+      - PROFILE=devel
+    networks:
+      - awr_network
+    restart: "no"
+    depends_on:
+      - awr_git
+    deploy:
+      resources:
+        limits:
+          memory: 0.5G
+          cpus: '0.05'
 
 networks:
   awr_network:

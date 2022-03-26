@@ -1,4 +1,4 @@
-FROM alpine:3.14 as init-stage
+FROM alpine:3.14 AS init-stage
 LABEL awr_git_img__stage=init
 RUN apk add --no-cache git \
     && git config --global init.defaultBranch master \
