@@ -1,1 +1,11 @@
-# Agency Workers Regulations Tracking Demo
+# Spring Application Demo
+- Kafka
+- Redis
+- Postgresql
+- Spring Cloud Config
+- Spring Cloud Stream
+- Spring Data
+- Jooq
+- Feign
+- Flyway
+- 
